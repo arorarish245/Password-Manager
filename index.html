@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Password_Manager</title>
+</head>
+
+<body>
+  <div class="bg">
+    <nav>
+      <div class="logo">SecurePass</div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <div class="cont">
+      <div class="left">
+        <h1>SecurePass</h1>
+        <pre>Welcome to our SecurePass, where security meets simplicity.
+Let's lock down your digital world, together!
+        </pre>
+      </div>
+
+    </div>
+    <div class="container">
+      <h2>Your Passwords <span id="alert">(Copied!)</span></h2>
+      <table>
+        <tr>
+          <th>Website</th>
+          <th>Username</th>
+          <th>Password</th>
+          <th>Delete</th>
+        </tr>
+      </table>
+
+      <h2>Add a password</h2>
+      <form action="/submit" method="post">
+        <label for="website">Website</label>
+        <input type="text" id="website" name="website" required><br>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+<head>
+
+</html>
